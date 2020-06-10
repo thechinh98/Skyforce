@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-public class Utils {
+public class Util {
     public static String getLocalAddress() {
         try {
             InetAddress inetAddress = InetAddress.getLocalHost();

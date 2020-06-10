@@ -90,4 +90,9 @@ public class HomeScreen extends JPanel implements ActionListener{
             screenManager.navigate(NEW_ROOM_SCREEN, args);
         }
     }
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        g.drawImage(com.skyforce.ui.ImageLoader.loadPic("/sky-force.jpg"), 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, null);
+    }
 }
