@@ -18,10 +18,8 @@ public class ImageLoader {
        myPlane = imageLoader("/airplane2.png").getSubimage(85, 0, 95, 90);
     }
 
-    private static BufferedImage imageLoader(String path) {
+    public static BufferedImage imageLoader(String path) {
         try {
-            System.out.println(path);
-            System.out.println( ImageLoader.class.getResource(ImageLoader.class.getSimpleName() + ".class") );
             return ImageIO.read(ImageLoader.class.getResource(path));
         } catch (IOException e) {
             e.printStackTrace();

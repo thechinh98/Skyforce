@@ -93,6 +93,6 @@ public class HomeScreen extends JPanel implements ActionListener{
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(com.skyforce.ui.ImageLoader.loadPic("/sky-force.jpg"), 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, null);
+        g.drawImage(com.skyforce.ui.ImageLoader.imageLoader("/sky-force.jpg"), 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, null);
     }
 }
